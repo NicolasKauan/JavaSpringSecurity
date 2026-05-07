@@ -1,13 +1,10 @@
 package com.nika.JavaSpringSecurity.model;
 
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jdk.jfr.Enabled;
 
-@Enabled
+@Entity
 @Table(name = "tbl_pessoa")
 public class PessoaModel {
     @Id
@@ -17,6 +14,9 @@ public class PessoaModel {
     private String nome;
 
     public PessoaModel(Long id, String nome) {
+    }
+
+    public PessoaModel() {
     }
 
     public Long getId() {
