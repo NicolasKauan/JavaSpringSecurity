@@ -13,8 +13,7 @@ public class PessoaModel {
 
     private String nome;
 
-    public PessoaModel(Long id, String nome) {
-    }
+
 
     public PessoaModel() {
     }
